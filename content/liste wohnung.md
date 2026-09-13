@@ -2,7 +2,7 @@
 publish: true
 title: Das brauche ich noch
 created: 2026-09-13T10:28:41.274Z
-modified: 2026-09-13T11:19:06.079Z
+modified: 2026-09-13T11:20:27.226Z
 ---
 
 ## grobe Zusammenfassung
@@ -84,6 +84,7 @@ modified: 2026-09-13T11:19:06.079Z
   - [ ] Gläser aus dem Keller, falls die Mama da zu viele hat
 - [ ] Stromadapter, falls wir einen zuhause übrig haben
 - [ ] Den dunkelblauenblauen Stehsammler mit ganz viel losem Papier (müsste in einem Karton bei der Treppe sein)
+- [ ] Der braune Ordner mit den ETH Flyern (müsste beim schreibtisch an der rechten seite drinstehen)
 - [ ] Grundnahrungsmittel (kann auch erstmal welche hier kaufen und dann erst wenn ich im Oktober komme welche aus Deutschland mitnehmen)
   - [ ] Es liegen noch ein paar Wraps in der Vorratsschublade
   - [ ] Rosinen

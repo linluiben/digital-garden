@@ -1,15 +1,12 @@
 ---
 publish: true
 created: 2026-11-08T17:20:40.417Z
-modified: 2026-11-08T17:38:40.218Z
+modified: 2026-11-09T17:01:24.837Z
 ---
 
 Sei ${}A \subseteq \mathbb{N}{}$. ${}A{}$ besitzt Dichte ${}d(A){}$ falls der Grenzwert ${}d(A) := \lim_{ n \to \infty } \frac{1}{n} |A \cap [1,n]|{}$ existiert.
 
 #### (1) ${}\bar{d}(A) > 0 \implies \exists m \in \mathbb{N} (\bar{d}(A \cap (A-m)) >0){}$
-
-Seien ${}\varepsilon > 0, \quad \beta := \lceil \frac{1}{\bar{d}(A)} \rceil + 1, \quad B_{m} := A \cap (A-m) \ | \ 1 \le m \le \beta{}$.
-Seien zudem ${}\bigcup_{i=1}^{\beta} B_{i} =: B \subseteq A{}$ und ${}Q:= A\setminus B{}$, also ${}A = B \sqcup Q{}$.
 
 > [!lemma]+ Lemma: Subadditivität von ${}\bar{d}{}$
 > ${}\text{Für } X,Y \subseteq \mathbb{N} \ \text{gilt:} \ \bar{d}(X \cup Y) \leq \bar{d}(X) + \bar{d}(Y){}$
@@ -37,6 +34,8 @@ Seien zudem ${}\bigcup_{i=1}^{\beta} B_{i} =: B \subseteq A{}$ und ${}Q:= A\setm
 > > - **Induktionsschritt** $k \to k+1$: Die Aussage gelte für ein $k \in \mathbb{N}$. Mit $Y := \bigcup_{i=1}^{k} X_i$ folgt
 > >   $\bar{d}\Big(\bigcup_{i=1}^{k+1} X_i\Big) = \bar{d}(Y \cup X_{k+1}) \overset{\text{Lemma}}{\le} \bar{d}(Y) + \bar{d}(X_{k+1}) \overset{\text{IV}}{\le} \sum_{i=1}^{k} \bar{d}(X_i) + \bar{d}(X_{k+1}) = \sum_{i=1}^{k+1} \bar{d}(X_i). \qquad \square$
 
+Seien ${}\varepsilon > 0, \quad \beta := \lceil \frac{1}{\bar{d}(A)} \rceil + 1, \quad B_{m} := A \cap (A-m) \ | \ 1 \le m \le \beta{}$.
+Seien zudem ${}\bigcup_{i=1}^{\beta} B_{i} =: B \subseteq A{}$ und ${}Q:= A\setminus B{}$, also ${}A = B \sqcup Q{}$.
 Angenommen ${}\bar{d}(B) = 0{}$:
 Dann gelten: ${}\bar{d}(A) \le \bar{d}(B) + \bar{d}(Q) = \bar{d}(Q) {}$ wegen des Lemmas, zudem\
 ${} \forall n_{1} < n_{2} \in Q (n_{2}-n_{1} > \beta){}$ wegen ${}Q \cap B = \emptyset{}$ und somit für alle ${}n : |Q \cap [1,n]| \le \frac{n}{\beta} + 1{}$.

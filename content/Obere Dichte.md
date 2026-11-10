@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-11-08T17:20:40.417Z
-modified: 2026-11-09T17:01:24.837Z
+modified: 2026-11-10T12:27:51.186Z
 ---
 
 Sei ${}A \subseteq \mathbb{N}{}$. ${}A{}$ besitzt Dichte ${}d(A){}$ falls der Grenzwert ${}d(A) := \lim_{ n \to \infty } \frac{1}{n} |A \cap [1,n]|{}$ existiert.
@@ -50,7 +50,7 @@ ${} \forall n_{1} < n_{2} \in Q (n_{2}-n_{1} > \beta){}$ wegen ${}Q \cap B = \em
 > \end{gather}
 > $$
 >
-> Der kleinste Abstand zweier Elemente von ${}Q{}$ muss also grösser als ${}\beta{}$ sein. In jedem Intervall von ${}\beta{}$ aufeinanderfolgenden natürlichen Zahlen gibt es demnach maximal ein Element von ${}Q{}$ und im Intervall ${}[1,n]{}$ maximal ${}n \pmod{\beta} + 1 \le \frac{n}{\beta} + 1{}$ Elemente von ${}Q{}$ (${}+1 {}$ für das angefangene Intervall).
+> Der kleinste Abstand zweier Elemente von ${}Q{}$ muss also grösser als ${}\beta{}$ sein. In jedem Intervall von ${}\beta{}$ aufeinanderfolgenden natürlichen Zahlen gibt es demnach maximal ein Element von ${}Q{}$ und im Intervall ${}[1,n]{}$ maximal ${}\left\lfloor  \frac{n}{\beta}  \right\rfloor + 1 \le \frac{n}{\beta} + 1{}$ Elemente von ${}Q{}$ (${}+1 {}$ für das angefangene Intervall).
 >
 > $$
 > \tag*{$\square$}
@@ -67,6 +67,27 @@ $$
 Demnach gilt: ${}\bar{d}(A) \le \bar{d}(Q) < \bar{d}(A){}$, ein Widerspruch.
 
 Also war unsere Annahme falsch und wegen des Korollars gilt:
+
+$$
+\begin{gather}
+\bar{d}(B) > 0 \implies \exists m \le \beta : \bar{d}(B_{m}) > 0 
+\tag*{$\square$}
+\end{gather}
+$$
+
+---
+
+Alternativ ohne Widerspruch:
+${}\bar{d}(Q) \le \frac{1}{\beta}{}$ analog. Also gilt:
+
+$$
+\begin{gather}
+\bar{d}(A) \le \bar{d}(Q) + \bar{d}(B) \\
+\bar{d}(B) \ge \bar{d}(A) - \bar{d}(Q) \ge \underbrace{ \bar{d}(A) }_{ >  \frac{1}{\beta} } - \frac{1}{\beta} > 0
+\end{gather}
+$$
+
+Wegen des Korollars gilt nun
 
 $$
 \begin{gather}
